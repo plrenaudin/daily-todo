@@ -1,8 +1,11 @@
 import db, { TODOS } from "./db";
-import { useState, useEffect } from "react";
 
-const addTodo = async todo => {
-  const todos = await listTodo();
+export const LOAD = "load";
+export const ADD = "add";
+export const REMOVE = "remove";
+
+const addTodo = (input, todo) => {
+  const todos = input.slice();
   if (!todos.includes(todo)) {
     todos.push(todo);
     db.set(TODOS, todos);
@@ -10,8 +13,8 @@ const addTodo = async todo => {
   return todos;
 };
 
-const removeTodo = async todo => {
-  const todos = await listTodo();
+const removeTodo = (input, todo) => {
+  const todos = input.slice();
   const index = todos.indexOf(todo);
   if (index >= 0) {
     todos.splice(index, 1);
@@ -22,14 +25,4 @@ const removeTodo = async todo => {
 
 const listTodo = async () => await db.get(TODOS);
 
-const useTodos = () => {
-  const [todos, setTodos] = useState(listTodo());
-
-  useEffect(() => {
-    console.log("in effect");
-  });
-
-  return [todos, setTodos];
-};
-
-export { addTodo, removeTodo, listTodo, useTodos };
+export { addTodo, removeTodo, listTodo };

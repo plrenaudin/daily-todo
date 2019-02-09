@@ -11,15 +11,13 @@ afterEach(() => {
 
 describe("Adding todo", () => {
   it("adds a todo if it does not exist", async () => {
-    db.get.mockReturnValueOnce([]);
-    const result = await sut.addTodo("plop");
+    const result = await sut.addTodo([], "plop");
     expect(result).toEqual(["plop"]);
   });
 
   it("does not add a todo if it exists", async () => {
-    db.get.mockReturnValueOnce(["plop"]);
     expect(db.set).not.toBeCalled();
-    const result = await sut.addTodo("plop");
+    const result = await sut.addTodo(["plop"], "plop");
     expect(db.set).not.toBeCalled();
     expect(result).toEqual(["plop"]);
   });
@@ -27,15 +25,13 @@ describe("Adding todo", () => {
 
 describe("Removing todos", () => {
   it("removes a todo if it exists", async () => {
-    db.get.mockReturnValueOnce(["plop"]);
-    const result = await sut.removeTodo("plop");
+    const result = await sut.removeTodo(["plop"], "plop");
     expect(result).toEqual([]);
   });
 
   it("does nothing if todo does not exist", async () => {
-    db.get.mockReturnValueOnce(["plop"]);
     expect(db.set).not.toBeCalled();
-    const result = await sut.removeTodo("plip");
+    const result = await sut.removeTodo(["plop"], "plip");
     expect(db.set).not.toBeCalled();
     expect(result).toEqual(["plop"]);
   });

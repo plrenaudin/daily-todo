@@ -1,24 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { listTodo, removeTodo } from "../modules/model";
+import React from "react";
+import { REMOVE } from "../modules/model";
+import { TodoStore } from "./Store";
 
 const TodoList = () => {
-  const [data, setData] = useState([]);
+  const { todos, dispatch } = React.useContext(TodoStore);
 
-  const fetchData = async () => {
-    console.log("fetching");
-    const result = await listTodo();
-    setData(result);
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
+  const remove = data => dispatch({ type: REMOVE, data });
 
   return (
     <ul>
-      {data.map(i => (
+      {todos.map(i => (
         <li key={i}>
-          {i} <button onClick={() => removeTodo(i)}>X</button>
+          {i} <button onClick={() => remove(i)}>X</button>
         </li>
       ))}
     </ul>
