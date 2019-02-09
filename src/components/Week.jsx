@@ -6,7 +6,7 @@ const Table = styled.table`
   border: 1px solid grey;
 `;
 
-const Week = React.memo(({ startDate, todos }) => (
+const Week = React.memo(({ startDate }) => (
   <Table>
     <WeekHeader {...{ startDate }} />
   </Table>

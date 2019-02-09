@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders the DayHeader correctly 1`] = `
+exports[`renders the WeekHeader correctly 1`] = `
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
