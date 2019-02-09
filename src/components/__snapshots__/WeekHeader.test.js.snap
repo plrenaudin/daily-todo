@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the DayHeader correctly 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.c2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.c3 {
+  color: grey;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+<thead>
+  <tr
+    className="c0"
+  >
+    <td
+      className="c1"
+    >
+      <em
+        className="c2"
+      >
+        Mo
+      </em>
+      <small
+        className="c3"
+      >
+        4th
+      </small>
+    </td>
+    <td
+      className="c1"
+    >
+      <em
+        className="c2"
+      >
+        Tu
+      </em>
+      <small
+        className="c3"
+      >
+        5th
+      </small>
+    </td>
+    <td
+      className="c1"
+    >
+      <em
+        className="c2"
+      >
+        We
+      </em>
+      <small
+        className="c3"
+      >
+        6th
+      </small>
+    </td>
+    <td
+      className="c1"
+    >
+      <em
+        className="c2"
+      >
+        Th
+      </em>
+      <small
+        className="c3"
+      >
+        7th
+      </small>
+    </td>
+    <td
+      className="c1"
+    >
+      <em
+        className="c2"
+      >
+        Fr
+      </em>
+      <small
+        className="c3"
+      >
+        8th
+      </small>
+    </td>
+    <td
+      className="c1"
+    >
+      <em
+        className="c2"
+      >
+        Sa
+      </em>
+      <small
+        className="c3"
+      >
+        9th
+      </small>
+    </td>
+    <td
+      className="c1"
+    >
+      <em
+        className="c2"
+      >
+        Su
+      </em>
+      <small
+        className="c3"
+      >
+        10th
+      </small>
+    </td>
+  </tr>
+</thead>
+`;
