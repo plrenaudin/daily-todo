@@ -5,12 +5,18 @@ import {
   addTodo,
   REMOVE,
   removeTodo,
-  listTodo
+  listTodo,
+  TOGGLE,
+  toggleTodo,
+  listWeekTodo
 } from "../modules/model";
+import { isoFormatDate, currentWeekISO } from "../modules/date";
 
+const ConfigStore = React.createContext();
 const TodoStore = React.createContext();
+const WeekStore = React.createContext();
 
-const reducer = (state, action) => {
+const todoReducer = (state, action) => {
   switch (action.type) {
     case LOAD:
       return action.data;
@@ -23,19 +29,54 @@ const reducer = (state, action) => {
   }
 };
 
+const weekReducer = (state, action) => {
+  switch (action.type) {
+    case LOAD:
+      return action.data;
+    case TOGGLE:
+      console.log("tggle", action.todo, action.day);
+      return toggleTodo(state, action.todo, action.day);
+    default:
+      throw new Error();
+  }
+};
+
+const useDayTodos = () => {
+  const [week, dispatch] = React.useReducer(weekReducer, []);
+  return { week, dispatch };
+};
+
 const useTodos = () => {
-  const [todos, dispatch] = React.useReducer(reducer, []);
+  const [todos, dispatch] = React.useReducer(todoReducer, []);
   return { todos, dispatch };
 };
 
 const Provider = ({ children }) => {
-  const store = useTodos();
+  //Config
+  const [currenDate, setCurrentDate] = React.useState(isoFormatDate());
+  const configStore = { currenDate, setCurrentDate };
+
+  //Week
+  const weekStore = useDayTodos();
+
+  //Todos
+  const todoStore = useTodos();
+
   React.useEffect(() => {
-    listTodo().then(data => {
-      store.dispatch({ type: LOAD, data });
+    const week = currentWeekISO();
+    Promise.all([listTodo(), listWeekTodo(week)]).then(([todos, weekTodos]) => {
+      todoStore.dispatch({ type: LOAD, data: todos });
+      weekStore.dispatch({ type: LOAD, data: weekTodos });
     });
   }, []);
-  return <TodoStore.Provider value={store}>{children}</TodoStore.Provider>;
+
+  return (
+    <ConfigStore.Provider value={configStore}>
+      <TodoStore.Provider value={todoStore}>
+        <WeekStore.Provider value={weekStore}>{children}</WeekStore.Provider>
+      </TodoStore.Provider>
+    </ConfigStore.Provider>
+  );
 };
 
-export { TodoStore, Provider };
+export { ConfigStore, WeekStore, TodoStore, Provider };

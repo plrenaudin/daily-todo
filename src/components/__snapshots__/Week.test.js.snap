@@ -2,27 +2,13 @@
 
 exports[`renders the Week correctly 1`] = `
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   padding: 1rem;
 }
 
 .c3 {
   font-size: 1.3rem;
   font-weight: bold;
+  display: block;
 }
 
 .c4 {
@@ -30,19 +16,19 @@ exports[`renders the Week correctly 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  list-style-type: none;
+  padding: 0.3rem;
 }
 
 .c0 {
   border: 1px solid grey;
+}
+
+.c5 {
+  background-color: lightgray;
+}
+
+.c6 {
+  padding: 0.3rem;
 }
 
 <table
@@ -52,7 +38,7 @@ exports[`renders the Week correctly 1`] = `
     <tr
       className="c1"
     >
-      <td
+      <th
         className="c2"
       >
         <em
@@ -63,10 +49,10 @@ exports[`renders the Week correctly 1`] = `
         <small
           className="c4"
         >
-          4th
+          18th
         </small>
-      </td>
-      <td
+      </th>
+      <th
         className="c2"
       >
         <em
@@ -77,10 +63,10 @@ exports[`renders the Week correctly 1`] = `
         <small
           className="c4"
         >
-          5th
+          19th
         </small>
-      </td>
-      <td
+      </th>
+      <th
         className="c2"
       >
         <em
@@ -91,10 +77,10 @@ exports[`renders the Week correctly 1`] = `
         <small
           className="c4"
         >
-          6th
+          20th
         </small>
-      </td>
-      <td
+      </th>
+      <th
         className="c2"
       >
         <em
@@ -105,10 +91,10 @@ exports[`renders the Week correctly 1`] = `
         <small
           className="c4"
         >
-          7th
+          21st
         </small>
-      </td>
-      <td
+      </th>
+      <th
         className="c2"
       >
         <em
@@ -119,10 +105,10 @@ exports[`renders the Week correctly 1`] = `
         <small
           className="c4"
         >
-          8th
+          22nd
         </small>
-      </td>
-      <td
+      </th>
+      <th
         className="c2"
       >
         <em
@@ -133,10 +119,10 @@ exports[`renders the Week correctly 1`] = `
         <small
           className="c4"
         >
-          9th
+          23rd
         </small>
-      </td>
-      <td
+      </th>
+      <th
         className="c2"
       >
         <em
@@ -147,10 +133,146 @@ exports[`renders the Week correctly 1`] = `
         <small
           className="c4"
         >
-          10th
+          24th
         </small>
-      </td>
+      </th>
     </tr>
   </thead>
+  <tbody>
+    <tr
+      className="c5"
+    >
+      <td
+        className="c6"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+    </tr>
+    <tr
+      className="c5"
+    >
+      <td
+        className="c6"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+      >
+        <input
+          checked={true}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+    </tr>
+  </tbody>
 </table>
 `;

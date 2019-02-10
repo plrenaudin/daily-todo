@@ -2,27 +2,13 @@
 
 exports[`renders the WeekHeader correctly 1`] = `
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   padding: 1rem;
 }
 
 .c2 {
   font-size: 1.3rem;
   font-weight: bold;
+  display: block;
 }
 
 .c3 {
@@ -30,22 +16,14 @@ exports[`renders the WeekHeader correctly 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  list-style-type: none;
+  padding: 0.3rem;
 }
 
 <thead>
   <tr
     className="c0"
   >
-    <td
+    <th
       className="c1"
     >
       <em
@@ -56,10 +34,10 @@ exports[`renders the WeekHeader correctly 1`] = `
       <small
         className="c3"
       >
-        4th
+        18th
       </small>
-    </td>
-    <td
+    </th>
+    <th
       className="c1"
     >
       <em
@@ -70,10 +48,10 @@ exports[`renders the WeekHeader correctly 1`] = `
       <small
         className="c3"
       >
-        5th
+        19th
       </small>
-    </td>
-    <td
+    </th>
+    <th
       className="c1"
     >
       <em
@@ -84,10 +62,10 @@ exports[`renders the WeekHeader correctly 1`] = `
       <small
         className="c3"
       >
-        6th
+        20th
       </small>
-    </td>
-    <td
+    </th>
+    <th
       className="c1"
     >
       <em
@@ -98,10 +76,10 @@ exports[`renders the WeekHeader correctly 1`] = `
       <small
         className="c3"
       >
-        7th
+        21st
       </small>
-    </td>
-    <td
+    </th>
+    <th
       className="c1"
     >
       <em
@@ -112,10 +90,10 @@ exports[`renders the WeekHeader correctly 1`] = `
       <small
         className="c3"
       >
-        8th
+        22nd
       </small>
-    </td>
-    <td
+    </th>
+    <th
       className="c1"
     >
       <em
@@ -126,10 +104,10 @@ exports[`renders the WeekHeader correctly 1`] = `
       <small
         className="c3"
       >
-        9th
+        23rd
       </small>
-    </td>
-    <td
+    </th>
+    <th
       className="c1"
     >
       <em
@@ -140,9 +118,9 @@ exports[`renders the WeekHeader correctly 1`] = `
       <small
         className="c3"
       >
-        10th
+        24th
       </small>
-    </td>
+    </th>
   </tr>
 </thead>
 `;

@@ -2,17 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { format } from "date-fns";
 
-const Day = styled.td`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+const Day = styled.th`
   padding: 1rem;
 `;
 
 const DayLabel = styled.em`
   font-size: 1.3rem;
   font-weight: bold;
+  display: block;
 `;
 
 const DayDigit = styled.small`

@@ -3,6 +3,7 @@
 exports[`renders the TodoInput correctly 1`] = `
 Array [
   <input
+    onKeyDown={[Function]}
     type="text"
   />,
   <button

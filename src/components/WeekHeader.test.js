@@ -1,9 +1,13 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { WeekHeader } from "./WeekHeader";
-import "jest-styled-components";
+import { ConfigStore } from "./Store";
 
 it("renders the WeekHeader correctly", () => {
-  const component = <WeekHeader startDate={new Date(1549509463523)} />;
+  const component = (
+    <ConfigStore.Provider value={{ currentDate: "2019-02-24" }}>
+      <WeekHeader />
+    </ConfigStore.Provider>
+  );
   expect(renderer.create(component).toJSON()).toMatchSnapshot();
 });

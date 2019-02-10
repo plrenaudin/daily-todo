@@ -4,18 +4,25 @@ import { Week } from "./components/Week";
 import { TodoList } from "./components/TodoList";
 import { Provider } from "./components/Store";
 import { TodoInput } from "./components/TodoInput";
+import styled from "styled-components";
+
+const MainView = styled.section`
+  display: flex;
+`;
 
 const App = () => {
   return (
     <Provider>
       <main>
         <h1>Todo-daily</h1>
-        <Week />
-        <TodoList />
+        <MainView>
+          <Week />
+          <TodoList />
+        </MainView>
         <TodoInput />
       </main>
     </Provider>
   );
 };
 
-export default App;
+export default React.memo(App);

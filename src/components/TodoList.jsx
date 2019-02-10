@@ -2,7 +2,7 @@ import React from "react";
 import { REMOVE } from "../modules/model";
 import { TodoStore } from "./Store";
 
-const TodoList = () => {
+const TodoList = React.memo(() => {
   const { todos, dispatch } = React.useContext(TodoStore);
 
   const remove = data => dispatch({ type: REMOVE, data });
@@ -16,6 +16,6 @@ const TodoList = () => {
       ))}
     </ul>
   );
-};
+});
 
 export { TodoList };
