@@ -1,15 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders the TodoInput correctly 1`] = `
-Array [
-  <input
-    onKeyDown={[Function]}
-    type="text"
-  />,
-  <button
-    onClick={[Function]}
-  >
-    Add
-  </button>,
-]
+.c0 {
+  padding: 0.5rem 0 0.5rem 0.3rem;
+}
+
+<input
+  className="c0"
+  onKeyDown={[Function]}
+  placeholder="Add Todo"
+  type="text"
+/>
 `;

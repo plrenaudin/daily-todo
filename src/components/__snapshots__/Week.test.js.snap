@@ -19,16 +19,61 @@ exports[`renders the Week correctly 1`] = `
   padding: 0.3rem;
 }
 
+.c13 {
+  padding: 0.5rem 0 0.5rem 0.3rem;
+}
+
 .c0 {
-  border: 1px solid grey;
+  border-spacing: 0.3rem;
+  border-collapse: separate;
 }
 
 .c5 {
-  background-color: lightgray;
+  text-align: center;
 }
 
 .c6 {
-  padding: 0.3rem;
+  padding: 1rem 0;
+  background-color: hsl(77,100%,93%);
+}
+
+.c8 {
+  padding: 1rem 0;
+  background-color: hsl(82,100%,93%);
+}
+
+.c9 {
+  padding: 1rem 0;
+  background-color: hsl(82,100%,70%);
+}
+
+.c11 {
+  padding: 1rem 0;
+  background-color: transparent;
+}
+
+.c7 {
+  padding: 1rem 0;
+  background-color: hsl(77,100%,70%);
+  text-align: left;
+  padding: 0 0.3rem;
+  background-color: hsl(77,100%,70%);
+}
+
+.c10 {
+  padding: 1rem 0;
+  background-color: hsl(82,100%,70%);
+  text-align: left;
+  padding: 0 0.3rem;
+  background-color: hsl(82,100%,70%);
+}
+
+.c12 {
+  padding: 1rem 0;
+  background-color: transparent;
+  text-align: left;
+  padding: 0 0.3rem;
+  background-color: transparent;
 }
 
 <table
@@ -102,6 +147,7 @@ exports[`renders the Week correctly 1`] = `
     >
       <td
         className="c6"
+        color="hsl(77, 100%, 93%)"
       >
         <input
           checked={false}
@@ -111,6 +157,7 @@ exports[`renders the Week correctly 1`] = `
       </td>
       <td
         className="c6"
+        color="hsl(77, 100%, 93%)"
       >
         <input
           checked={false}
@@ -120,6 +167,7 @@ exports[`renders the Week correctly 1`] = `
       </td>
       <td
         className="c6"
+        color="hsl(77, 100%, 93%)"
       >
         <input
           checked={false}
@@ -129,19 +177,35 @@ exports[`renders the Week correctly 1`] = `
       </td>
       <td
         className="c6"
+        color="hsl(77, 100%, 93%)"
       >
         <input
           checked={false}
           onChange={[Function]}
           type="checkbox"
         />
+      </td>
+      <td
+        className="c7"
+        color="hsl(77, 100%, 70%)"
+      >
+        <label>
+          plip
+        </label>
+         
+        <button
+          onClick={[Function]}
+        >
+          X
+        </button>
       </td>
     </tr>
     <tr
       className="c5"
     >
       <td
-        className="c6"
+        className="c8"
+        color="hsl(82, 100%, 93%)"
       >
         <input
           checked={false}
@@ -150,7 +214,8 @@ exports[`renders the Week correctly 1`] = `
         />
       </td>
       <td
-        className="c6"
+        className="c8"
+        color="hsl(82, 100%, 93%)"
       >
         <input
           checked={false}
@@ -159,7 +224,8 @@ exports[`renders the Week correctly 1`] = `
         />
       </td>
       <td
-        className="c6"
+        className="c9"
+        color="hsl(82, 100%, 70%)"
       >
         <input
           checked={true}
@@ -168,12 +234,61 @@ exports[`renders the Week correctly 1`] = `
         />
       </td>
       <td
-        className="c6"
+        className="c8"
+        color="hsl(82, 100%, 93%)"
       >
         <input
           checked={false}
           onChange={[Function]}
           type="checkbox"
+        />
+      </td>
+      <td
+        className="c10"
+        color="hsl(82, 100%, 70%)"
+      >
+        <label>
+          huhu
+        </label>
+         
+        <button
+          onClick={[Function]}
+        >
+          X
+        </button>
+      </td>
+    </tr>
+    <tr
+      className="c5"
+    >
+      <td
+        className="c11"
+      >
+         
+      </td>
+      <td
+        className="c11"
+      >
+         
+      </td>
+      <td
+        className="c11"
+      >
+         
+      </td>
+      <td
+        className="c11"
+      >
+         
+      </td>
+      <td
+        className="c12"
+      >
+        <input
+          className="c13"
+          onKeyDown={[Function]}
+          placeholder="Add Todo"
+          type="text"
         />
       </td>
     </tr>
