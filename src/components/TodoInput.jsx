@@ -1,6 +1,11 @@
 import React from "react";
 import { ADD } from "../modules/model";
 import { TodoStore } from "../components/Store";
+import styled from "styled-components";
+
+const Input = styled.input`
+  padding: 0.5rem 0 0.5rem 0.3rem;
+`;
 
 const TodoInput = React.memo(() => {
   let textInput = React.useRef();
@@ -12,12 +17,12 @@ const TodoInput = React.memo(() => {
   const { dispatch } = React.useContext(TodoStore);
   return (
     <>
-      <input
+      <Input
         type="text"
+        placeholder="Add Todo"
         ref={textInput}
         onKeyDown={e => e.keyCode === 13 && createTodo()}
       />
-      <button onClick={createTodo}>Add</button>
     </>
   );
 });

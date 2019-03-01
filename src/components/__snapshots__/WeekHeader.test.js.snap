@@ -29,62 +29,6 @@ exports[`renders the WeekHeader correctly 1`] = `
       <em
         className="c2"
       >
-        Mo
-      </em>
-      <small
-        className="c3"
-      >
-        18th
-      </small>
-    </th>
-    <th
-      className="c1"
-    >
-      <em
-        className="c2"
-      >
-        Tu
-      </em>
-      <small
-        className="c3"
-      >
-        19th
-      </small>
-    </th>
-    <th
-      className="c1"
-    >
-      <em
-        className="c2"
-      >
-        We
-      </em>
-      <small
-        className="c3"
-      >
-        20th
-      </small>
-    </th>
-    <th
-      className="c1"
-    >
-      <em
-        className="c2"
-      >
-        Th
-      </em>
-      <small
-        className="c3"
-      >
-        21st
-      </small>
-    </th>
-    <th
-      className="c1"
-    >
-      <em
-        className="c2"
-      >
         Fr
       </em>
       <small
@@ -119,6 +63,20 @@ exports[`renders the WeekHeader correctly 1`] = `
         className="c3"
       >
         24th
+      </small>
+    </th>
+    <th
+      className="c1"
+    >
+      <em
+        className="c2"
+      >
+        Mo
+      </em>
+      <small
+        className="c3"
+      >
+        25th
       </small>
     </th>
   </tr>

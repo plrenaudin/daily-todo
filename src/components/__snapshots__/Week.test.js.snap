@@ -44,62 +44,6 @@ exports[`renders the Week correctly 1`] = `
         <em
           className="c3"
         >
-          Mo
-        </em>
-        <small
-          className="c4"
-        >
-          18th
-        </small>
-      </th>
-      <th
-        className="c2"
-      >
-        <em
-          className="c3"
-        >
-          Tu
-        </em>
-        <small
-          className="c4"
-        >
-          19th
-        </small>
-      </th>
-      <th
-        className="c2"
-      >
-        <em
-          className="c3"
-        >
-          We
-        </em>
-        <small
-          className="c4"
-        >
-          20th
-        </small>
-      </th>
-      <th
-        className="c2"
-      >
-        <em
-          className="c3"
-        >
-          Th
-        </em>
-        <small
-          className="c4"
-        >
-          21st
-        </small>
-      </th>
-      <th
-        className="c2"
-      >
-        <em
-          className="c3"
-        >
           Fr
         </em>
         <small
@@ -134,6 +78,20 @@ exports[`renders the Week correctly 1`] = `
           className="c4"
         >
           24th
+        </small>
+      </th>
+      <th
+        className="c2"
+      >
+        <em
+          className="c3"
+        >
+          Mo
+        </em>
+        <small
+          className="c4"
+        >
+          25th
         </small>
       </th>
     </tr>
@@ -178,33 +136,6 @@ exports[`renders the Week correctly 1`] = `
           type="checkbox"
         />
       </td>
-      <td
-        className="c6"
-      >
-        <input
-          checked={false}
-          onChange={[Function]}
-          type="checkbox"
-        />
-      </td>
-      <td
-        className="c6"
-      >
-        <input
-          checked={false}
-          onChange={[Function]}
-          type="checkbox"
-        />
-      </td>
-      <td
-        className="c6"
-      >
-        <input
-          checked={false}
-          onChange={[Function]}
-          type="checkbox"
-        />
-      </td>
     </tr>
     <tr
       className="c5"
@@ -231,43 +162,16 @@ exports[`renders the Week correctly 1`] = `
         className="c6"
       >
         <input
-          checked={false}
-          onChange={[Function]}
-          type="checkbox"
-        />
-      </td>
-      <td
-        className="c6"
-      >
-        <input
-          checked={false}
-          onChange={[Function]}
-          type="checkbox"
-        />
-      </td>
-      <td
-        className="c6"
-      >
-        <input
-          checked={false}
-          onChange={[Function]}
-          type="checkbox"
-        />
-      </td>
-      <td
-        className="c6"
-      >
-        <input
-          checked={false}
-          onChange={[Function]}
-          type="checkbox"
-        />
-      </td>
-      <td
-        className="c6"
-      >
-        <input
           checked={true}
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+      >
+        <input
+          checked={false}
           onChange={[Function]}
           type="checkbox"
         />

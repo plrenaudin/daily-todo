@@ -34,7 +34,6 @@ const weekReducer = (state, action) => {
     case LOAD:
       return action.data;
     case TOGGLE:
-      console.log("tggle", action.todo, action.day);
       return toggleTodo(state, action.todo, action.day);
     default:
       throw new Error();

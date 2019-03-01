@@ -1,9 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Week } from "./components/Week";
-import { TodoList } from "./components/TodoList";
 import { Provider } from "./components/Store";
-import { TodoInput } from "./components/TodoInput";
 import styled from "styled-components";
 
 const MainView = styled.section`
@@ -17,9 +15,7 @@ const App = () => {
         <h1>Todo-daily</h1>
         <MainView>
           <Week />
-          <TodoList />
         </MainView>
-        <TodoInput />
       </main>
     </Provider>
   );

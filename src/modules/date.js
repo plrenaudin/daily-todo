@@ -1,15 +1,15 @@
-import { startOfWeek, format, addDays } from "date-fns";
-
+import format from "date-fns/format";
+import addDays from "date-fns/add_days";
 /**
- * Returns current week of the day or today if no day parameters
+ * Returns days around of the day or today if no day parameters
  *
  * @param {string} day Day date in ISO format
  *
- * @returns {Date[]} Array containing the dates of the week
+ * @returns {Date[]} Array containing 3 days before 1 day after
  */
 const currentWeek = (day = isoFormatDate()) => {
-  const firstDayOfWeek = startOfWeek(day, { weekStartsOn: 1 });
-  return [...Array(7).keys()].map(i => addDays(firstDayOfWeek, i));
+  const firstDayOfWeek = addDays(day, -2);
+  return [...Array(4).keys()].map(i => addDays(firstDayOfWeek, i));
 };
 
 /**
@@ -17,7 +17,7 @@ const currentWeek = (day = isoFormatDate()) => {
  *
  * @param {string} day Day date in ISO format
  *
- * @returns {string[]} Array containing the dates of the week in ISO format
+ * @returns {string[]} Array containing 3 days before 1 day after
  */
 const currentWeekISO = (day = isoFormatDate()) =>
   currentWeek(day).map(isoFormatDate);

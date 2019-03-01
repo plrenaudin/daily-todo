@@ -1,5 +1,6 @@
 {
   "name": "Daily TODO",
+  "alias": "daily-todo",
   "builds": [
     {
       "src": "package.json",
