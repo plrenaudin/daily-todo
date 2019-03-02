@@ -12,7 +12,6 @@ const App = () => {
   return (
     <Provider>
       <main>
-        <h1>Todo-daily</h1>
         <MainView>
           <Week />
         </MainView>

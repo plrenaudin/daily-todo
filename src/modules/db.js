@@ -6,7 +6,7 @@ const TODOS = "Todos";
 const dbPromise = openDb("daily-todo-store", 1, upgradeDB => {
   const store = upgradeDB.createObjectStore("daily-todo");
   store.put([], isoFormatDate());
-  store.put([], TODOS);
+  store.put(["first todo", "second todo"], TODOS);
 });
 
 const db = {

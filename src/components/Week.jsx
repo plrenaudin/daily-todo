@@ -6,10 +6,12 @@ import { currentWeekISO } from "../modules/date";
 import { TOGGLE, REMOVE } from "../modules/model";
 import { TodoInput } from "./TodoInput";
 import { generateColor } from "../modules/color";
+import isToday from "date-fns/is_today";
 
 const Table = styled.table`
-  border-spacing: 0.3rem;
-  border-collapse: separate;
+  border-spacing: 0.1rem;
+  table-layout: fixed;
+  width: 100%;
 `;
 
 const Row = styled.tr`
@@ -18,15 +20,26 @@ const Row = styled.tr`
 
 const Cell = styled.td`
   padding: 1rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   background-color: ${props => props.color || "transparent"};
+  ${props => props.isToday && "width: 14%;"}
 `;
+
 const TodoCell = styled(Cell)`
   text-align: left;
   padding: 0 0.3rem;
+  height: 100%;
   background-color: ${props => props.color || "transparent"};
 `;
+
+const CheckBox = styled.input`
+  visibility: hidden;
+`;
+
 const onToggle = (dailyTodoStore, day, todo) => () => {
-  dailyTodoStore.dispatch({ type: TOGGLE, todo, day });
+  isToday(day) && dailyTodoStore.dispatch({ type: TOGGLE, todo, day });
 };
 
 const Week = React.memo(() => {
@@ -50,8 +63,13 @@ const Week = React.memo(() => {
               {currentWeekISO(config.currentDate).map(day => {
                 const done = (dailyTodoStore.week[day] || []).includes(todo);
                 return (
-                  <Cell key={day} color={done ? doneColor : baseColor}>
-                    <input
+                  <Cell
+                    key={day}
+                    color={done ? doneColor : baseColor}
+                    isToday={isToday(day)}
+                    onClick={onToggle(dailyTodoStore, day, todo)}
+                  >
+                    <CheckBox
                       type="checkbox"
                       checked={done}
                       onChange={onToggle(dailyTodoStore, day, todo)}
@@ -60,15 +78,23 @@ const Week = React.memo(() => {
                 );
               })}
               <TodoCell color={doneColor}>
-                <label>{todo}</label>{" "}
-                <button onClick={() => remove(todo)}>X</button>
+                <label>{todo}</label>
+                <svg
+                  style={{ float: "right" }}
+                  className="icon icon-cancel-circle"
+                  onClick={() => remove(todo)}
+                >
+                  <use xlinkHref="#icon-cancel-circle" />
+                </svg>
               </TodoCell>
             </Row>
           );
         })}
         <Row>
           {currentWeekISO(config.currentDate).map(day => (
-            <Cell key={day}>&nbsp;</Cell>
+            <Cell key={day} isToday={isToday(day)}>
+              &nbsp;
+            </Cell>
           ))}
           <TodoCell>
             <TodoInput />

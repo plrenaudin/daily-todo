@@ -8,8 +8,8 @@ import addDays from "date-fns/add_days";
  * @returns {Date[]} Array containing 3 days before 1 day after
  */
 const currentWeek = (day = isoFormatDate()) => {
-  const firstDayOfWeek = addDays(day, -2);
-  return [...Array(4).keys()].map(i => addDays(firstDayOfWeek, i));
+  const firstDayOfWeek = addDays(day, -6);
+  return [...Array(7).keys()].map(i => addDays(firstDayOfWeek, i));
 };
 
 /**
@@ -27,7 +27,7 @@ const currentWeekISO = (day = isoFormatDate()) =>
  *
  * @param {Date} date Date to format
  *
- * @returns string The date formatted
+ * @returns {string} The date formatted
  */
 const isoFormatDate = (date = new Date()) => format(date, "YYYY-MM-DD");
 

@@ -1,22 +1,24 @@
 import React from "react";
 import { currentWeek } from "../modules/date";
-import styled from "styled-components";
 import { DayHeader } from "./DayHeader";
 import { ConfigStore } from "./Store";
+import isToday from "date-fns/is_today";
+import styled from "styled-components";
 
-const Head = styled.tr`
-  padding: 0.3rem;
+const LastHeader = styled.th`
+  min-width: 20%;
 `;
 
 const WeekHeader = React.memo(() => {
   const config = React.useContext(ConfigStore);
   return (
     <thead>
-      <Head>
+      <tr>
         {currentWeek(config.currentDate).map(i => (
-          <DayHeader key={i.getTime()} day={i} />
+          <DayHeader key={i.getTime()} day={i} current={isToday(i)} />
         ))}
-      </Head>
+        <LastHeader>&nbsp;</LastHeader>
+      </tr>
     </thead>
   );
 });
