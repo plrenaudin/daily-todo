@@ -1,83 +1,129 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders the WeekHeader correctly 1`] = `
-.c1 {
-  padding: 1rem;
+.c0 {
+  padding: 0.3rem 0;
+  width: 8%;
 }
 
-.c2 {
-  font-size: 1.3rem;
+.c1 {
+  font-size: 1rem;
   font-weight: bold;
   display: block;
 }
 
-.c3 {
+.c2 {
   color: grey;
 }
 
-.c0 {
-  padding: 0.3rem;
+.c3 {
+  min-width: 20%;
 }
 
 <thead>
-  <tr
-    className="c0"
-  >
+  <tr>
     <th
-      className="c1"
+      className="c0"
     >
       <em
-        className="c2"
-      >
-        Fr
-      </em>
-      <small
-        className="c3"
-      >
-        22nd
-      </small>
-    </th>
-    <th
-      className="c1"
-    >
-      <em
-        className="c2"
-      >
-        Sa
-      </em>
-      <small
-        className="c3"
-      >
-        23rd
-      </small>
-    </th>
-    <th
-      className="c1"
-    >
-      <em
-        className="c2"
-      >
-        Su
-      </em>
-      <small
-        className="c3"
-      >
-        24th
-      </small>
-    </th>
-    <th
-      className="c1"
-    >
-      <em
-        className="c2"
+        className="c1"
       >
         Mo
       </em>
       <small
-        className="c3"
+        className="c2"
       >
-        25th
+        18
       </small>
+    </th>
+    <th
+      className="c0"
+    >
+      <em
+        className="c1"
+      >
+        Tu
+      </em>
+      <small
+        className="c2"
+      >
+        19
+      </small>
+    </th>
+    <th
+      className="c0"
+    >
+      <em
+        className="c1"
+      >
+        We
+      </em>
+      <small
+        className="c2"
+      >
+        20
+      </small>
+    </th>
+    <th
+      className="c0"
+    >
+      <em
+        className="c1"
+      >
+        Th
+      </em>
+      <small
+        className="c2"
+      >
+        21
+      </small>
+    </th>
+    <th
+      className="c0"
+    >
+      <em
+        className="c1"
+      >
+        Fr
+      </em>
+      <small
+        className="c2"
+      >
+        22
+      </small>
+    </th>
+    <th
+      className="c0"
+    >
+      <em
+        className="c1"
+      >
+        Sa
+      </em>
+      <small
+        className="c2"
+      >
+        23
+      </small>
+    </th>
+    <th
+      className="c0"
+    >
+      <em
+        className="c1"
+      >
+        Su
+      </em>
+      <small
+        className="c2"
+      >
+        24
+      </small>
+    </th>
+    <th
+      className="c3"
+    >
+       
     </th>
   </tr>
 </thead>

@@ -1,31 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders the Week correctly 1`] = `
-.c2 {
-  padding: 1rem;
+.c1 {
+  padding: 0.3rem 0;
+  width: 8%;
 }
 
-.c3 {
-  font-size: 1.3rem;
+.c2 {
+  font-size: 1rem;
   font-weight: bold;
   display: block;
 }
 
-.c4 {
+.c3 {
   color: grey;
 }
 
-.c1 {
-  padding: 0.3rem;
+.c4 {
+  min-width: 20%;
 }
 
-.c13 {
+.c14 {
   padding: 0.5rem 0 0.5rem 0.3rem;
 }
 
 .c0 {
-  border-spacing: 0.3rem;
-  border-collapse: separate;
+  border-spacing: 0.1rem;
+  table-layout: fixed;
+  width: 100%;
 }
 
 .c5 {
@@ -34,110 +36,183 @@ exports[`renders the Week correctly 1`] = `
 
 .c6 {
   padding: 1rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   background-color: hsl(77,100%,93%);
-}
-
-.c8 {
-  padding: 1rem 0;
-  background-color: hsl(82,100%,93%);
 }
 
 .c9 {
   padding: 1rem 0;
-  background-color: hsl(82,100%,70%);
-}
-
-.c11 {
-  padding: 1rem 0;
-  background-color: transparent;
-}
-
-.c7 {
-  padding: 1rem 0;
-  background-color: hsl(77,100%,70%);
-  text-align: left;
-  padding: 0 0.3rem;
-  background-color: hsl(77,100%,70%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: hsl(82,100%,93%);
 }
 
 .c10 {
   padding: 1rem 0;
-  background-color: hsl(82,100%,70%);
-  text-align: left;
-  padding: 0 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   background-color: hsl(82,100%,70%);
 }
 
 .c12 {
   padding: 1rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+.c8 {
+  padding: 1rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: hsl(77,100%,70%);
+  text-align: left;
+  padding: 0 0.3rem;
+  height: 100%;
+  background-color: hsl(77,100%,70%);
+}
+
+.c11 {
+  padding: 1rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: hsl(82,100%,70%);
+  text-align: left;
+  padding: 0 0.3rem;
+  height: 100%;
+  background-color: hsl(82,100%,70%);
+}
+
+.c13 {
+  padding: 1rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   background-color: transparent;
   text-align: left;
   padding: 0 0.3rem;
+  height: 100%;
   background-color: transparent;
+}
+
+.c7 {
+  visibility: hidden;
 }
 
 <table
   className="c0"
 >
   <thead>
-    <tr
-      className="c1"
-    >
+    <tr>
       <th
-        className="c2"
+        className="c1"
       >
         <em
-          className="c3"
-        >
-          Fr
-        </em>
-        <small
-          className="c4"
-        >
-          22nd
-        </small>
-      </th>
-      <th
-        className="c2"
-      >
-        <em
-          className="c3"
-        >
-          Sa
-        </em>
-        <small
-          className="c4"
-        >
-          23rd
-        </small>
-      </th>
-      <th
-        className="c2"
-      >
-        <em
-          className="c3"
-        >
-          Su
-        </em>
-        <small
-          className="c4"
-        >
-          24th
-        </small>
-      </th>
-      <th
-        className="c2"
-      >
-        <em
-          className="c3"
+          className="c2"
         >
           Mo
         </em>
         <small
-          className="c4"
+          className="c3"
         >
-          25th
+          18
         </small>
+      </th>
+      <th
+        className="c1"
+      >
+        <em
+          className="c2"
+        >
+          Tu
+        </em>
+        <small
+          className="c3"
+        >
+          19
+        </small>
+      </th>
+      <th
+        className="c1"
+      >
+        <em
+          className="c2"
+        >
+          We
+        </em>
+        <small
+          className="c3"
+        >
+          20
+        </small>
+      </th>
+      <th
+        className="c1"
+      >
+        <em
+          className="c2"
+        >
+          Th
+        </em>
+        <small
+          className="c3"
+        >
+          21
+        </small>
+      </th>
+      <th
+        className="c1"
+      >
+        <em
+          className="c2"
+        >
+          Fr
+        </em>
+        <small
+          className="c3"
+        >
+          22
+        </small>
+      </th>
+      <th
+        className="c1"
+      >
+        <em
+          className="c2"
+        >
+          Sa
+        </em>
+        <small
+          className="c3"
+        >
+          23
+        </small>
+      </th>
+      <th
+        className="c1"
+      >
+        <em
+          className="c2"
+        >
+          Su
+        </em>
+        <small
+          className="c3"
+        >
+          24
+        </small>
+      </th>
+      <th
+        className="c4"
+      >
+         
       </th>
     </tr>
   </thead>
@@ -148,9 +223,11 @@ exports[`renders the Week correctly 1`] = `
       <td
         className="c6"
         color="hsl(77, 100%, 93%)"
+        onClick={[Function]}
       >
         <input
           checked={false}
+          className="c7"
           onChange={[Function]}
           type="checkbox"
         />
@@ -158,9 +235,11 @@ exports[`renders the Week correctly 1`] = `
       <td
         className="c6"
         color="hsl(77, 100%, 93%)"
+        onClick={[Function]}
       >
         <input
           checked={false}
+          className="c7"
           onChange={[Function]}
           type="checkbox"
         />
@@ -168,9 +247,11 @@ exports[`renders the Week correctly 1`] = `
       <td
         className="c6"
         color="hsl(77, 100%, 93%)"
+        onClick={[Function]}
       >
         <input
           checked={false}
+          className="c7"
           onChange={[Function]}
           type="checkbox"
         />
@@ -178,67 +259,144 @@ exports[`renders the Week correctly 1`] = `
       <td
         className="c6"
         color="hsl(77, 100%, 93%)"
+        onClick={[Function]}
       >
         <input
           checked={false}
+          className="c7"
           onChange={[Function]}
           type="checkbox"
         />
       </td>
       <td
-        className="c7"
+        className="c6"
+        color="hsl(77, 100%, 93%)"
+        onClick={[Function]}
+      >
+        <input
+          checked={false}
+          className="c7"
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+        color="hsl(77, 100%, 93%)"
+        onClick={[Function]}
+      >
+        <input
+          checked={false}
+          className="c7"
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c6"
+        color="hsl(77, 100%, 93%)"
+        onClick={[Function]}
+      >
+        <input
+          checked={false}
+          className="c7"
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c8"
         color="hsl(77, 100%, 70%)"
       >
         <label>
           plip
         </label>
-         
-        <button
+        <svg
+          className="icon icon-cancel-circle"
           onClick={[Function]}
+          style={
+            Object {
+              "float": "right",
+            }
+          }
         >
-          X
-        </button>
+          <use
+            xlinkHref="#icon-cancel-circle"
+          />
+        </svg>
       </td>
     </tr>
     <tr
       className="c5"
     >
       <td
-        className="c8"
+        className="c9"
         color="hsl(82, 100%, 93%)"
+        onClick={[Function]}
       >
         <input
           checked={false}
-          onChange={[Function]}
-          type="checkbox"
-        />
-      </td>
-      <td
-        className="c8"
-        color="hsl(82, 100%, 93%)"
-      >
-        <input
-          checked={false}
+          className="c7"
           onChange={[Function]}
           type="checkbox"
         />
       </td>
       <td
         className="c9"
-        color="hsl(82, 100%, 70%)"
+        color="hsl(82, 100%, 93%)"
+        onClick={[Function]}
       >
         <input
-          checked={true}
+          checked={false}
+          className="c7"
           onChange={[Function]}
           type="checkbox"
         />
       </td>
       <td
-        className="c8"
+        className="c9"
         color="hsl(82, 100%, 93%)"
+        onClick={[Function]}
       >
         <input
           checked={false}
+          className="c7"
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c9"
+        color="hsl(82, 100%, 93%)"
+        onClick={[Function]}
+      >
+        <input
+          checked={false}
+          className="c7"
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c9"
+        color="hsl(82, 100%, 93%)"
+        onClick={[Function]}
+      >
+        <input
+          checked={false}
+          className="c7"
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c9"
+        color="hsl(82, 100%, 93%)"
+        onClick={[Function]}
+      >
+        <input
+          checked={false}
+          className="c7"
           onChange={[Function]}
           type="checkbox"
         />
@@ -246,46 +404,80 @@ exports[`renders the Week correctly 1`] = `
       <td
         className="c10"
         color="hsl(82, 100%, 70%)"
+        onClick={[Function]}
+      >
+        <input
+          checked={true}
+          className="c7"
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </td>
+      <td
+        className="c11"
+        color="hsl(82, 100%, 70%)"
       >
         <label>
           huhu
         </label>
-         
-        <button
+        <svg
+          className="icon icon-cancel-circle"
           onClick={[Function]}
+          style={
+            Object {
+              "float": "right",
+            }
+          }
         >
-          X
-        </button>
+          <use
+            xlinkHref="#icon-cancel-circle"
+          />
+        </svg>
       </td>
     </tr>
     <tr
       className="c5"
     >
       <td
-        className="c11"
-      >
-         
-      </td>
-      <td
-        className="c11"
-      >
-         
-      </td>
-      <td
-        className="c11"
-      >
-         
-      </td>
-      <td
-        className="c11"
+        className="c12"
       >
          
       </td>
       <td
         className="c12"
       >
+         
+      </td>
+      <td
+        className="c12"
+      >
+         
+      </td>
+      <td
+        className="c12"
+      >
+         
+      </td>
+      <td
+        className="c12"
+      >
+         
+      </td>
+      <td
+        className="c12"
+      >
+         
+      </td>
+      <td
+        className="c12"
+      >
+         
+      </td>
+      <td
+        className="c13"
+      >
         <input
-          className="c13"
+          className="c14"
           onKeyDown={[Function]}
           placeholder="Add Todo"
           type="text"

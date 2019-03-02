@@ -2,11 +2,12 @@
 
 exports[`renders the DayHeader correctly 1`] = `
 .c0 {
-  padding: 1rem;
+  padding: 0.3rem 0;
+  width: 8%;
 }
 
 .c1 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bold;
   display: block;
 }
@@ -26,7 +27,7 @@ exports[`renders the DayHeader correctly 1`] = `
   <small
     className="c2"
   >
-    6th
+    6
   </small>
 </th>
 `;
