@@ -4,18 +4,16 @@ import { Week } from "./components/Week";
 import { Provider } from "./components/Store";
 import styled from "styled-components";
 
-const MainView = styled.section`
+const MainView = styled.main`
   display: flex;
 `;
 
 const App = () => {
   return (
     <Provider>
-      <main>
-        <MainView>
-          <Week />
-        </MainView>
-      </main>
+      <MainView>
+        <Week />
+      </MainView>
     </Provider>
   );
 };
