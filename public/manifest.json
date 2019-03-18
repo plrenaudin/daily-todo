@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Daily Todo",
+  "name": "Daily Todo",
   "icons": [
     {
       "src": "favicon.ico",
